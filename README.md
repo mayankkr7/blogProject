@@ -1,77 +1,146 @@
-# React + Vite
+# Blog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Overview
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Blog App Project is a full-featured web application designed for efficient post management. It allows users to create, edit, and manage posts with ease. The application is built using modern web technologies, including React for the frontend, Redux Toolkit for state management, and Appwrite for backend services. With user authentication and rich content creation features, it is well-suited for a variety of content management needs.
 
 
+ <h3><a href="https://blog-app-mayankkr7.netlify.app/"><strong>See live preview »</strong></a></h3>
+
+<br />
+
+## Features
+
+- User Authentication: Users can sign up for an account using their email and password. Once signed up, users can log in using their credentials. Authentication state is managed using Redux and stored in the application's global state.
+- Post Management: Create, edit, update, and delete posts.
+- Rich Text Editor: Self-hosted TinyMCE Rich Text Editor for enhanced content creation.
+- Form Validation: Real-time form validation using react-hook-form.
+- State Management: Efficient state management with Redux Toolkit.
+- Protected Routes: Ensure only authenticated users can access certain parts of the application.
+- Error Handling: Comprehensive error handling for a robust user experience.
+
+<br />
+
+## Tech Stack
+
+### Frontend
+
+**React.js:** For building user interfaces.
+**Redux Toolkit:** For state management.
+**React Hook Form:** For form management and validation.
+**TinyMCE:** Self-hosted rich text editor.
+**Tailwind CSS:** For styling.
+
+### Backend
+
+**Appwrite:** For authentication and backend services.
+
+### Tools and Libraries
+
+- VS Code: For code editing.
+- React Router: For navigation.
+- ESLint: For code linting.
+- Prettier: For code formatting.
+- Vite: For fast development server and build tool.
+
+<br />
 
 
-Based on the provided files, your application appears to be a blog platform with authentication features. Here's a summary of the main functionalities and components based on the files you've shared:
+## Getting Started
+This project was built using react: v18.2.0, react-dom: v18.2.0, reduxjs/toolkit: ^2.2.3, tinymce: ^7.0.1, tinymce/tinymce-react: ^5.0.1", appwrite: ^14.0.0 and Tailwind CSS. It is a web application and for running on your local environment you should follow these guidelines.
 
-1. Authentication:
-Users can sign up for an account using their email and password.
-Once signed up, users can log in using their credentials.
-Authentication state is managed using Redux and stored in the application's global state.
+### Prerequisites
 
-2. Main Components:
-Header and Footer components: These provide the layout structure for your application and are displayed on every page.
-AuthLayout component: Handles authentication for certain routes, redirecting users to the login page if they are not authenticated.
-Login and Signup components: Used for user authentication and account creation.
-Home, AddPost, AllPosts, EditPost, and Post components: These represent different pages/views of your blog application.
-PostForm component: Used for creating and editing blog posts.
-PostCard component: Displays a single blog post with its title and featured image.
-RTE (Rich Text Editor) component: Allows users to input rich text content for their blog posts.
-Routing:
-React Router is used for routing between different pages of the application.
-Public routes, such as the home page, login, and signup pages, are accessible to all users.
-Private routes, such as adding/editing blog posts and viewing all posts, are protected and require authentication.
+- NPM 
 
-3. State Management:
-Redux is used for managing global application state, particularly for authentication-related data.
-The authSlice defines reducers for handling login and logout actions, which update the authentication state in the Redux store.
-
-4. Backend Integration:
-There are references to appwriteService, indicating integration with a backend service for user authentication and possibly storing blog post data.
-The config.js file contains configuration parameters for connecting to the backend service.
-
-Overall, your application seems to provide basic blogging functionality, allowing users to sign up, log in, create, edit, and view blog posts. It utilizes React for the frontend, Redux for state management, React Router for routing, and integrates with a backend service for authentication and data storage. With further styling and additional features, you can enhance the user experience and functionality of your blog platform.# blogProject
+### Setup
 
 
+The project repository can be found in [GitHub link](https://github.com/mayankkr7/blogProject.git) or just clone the project using this command.
+
+```
+Using HTTPS
+
+# git clone  https://github.com/mayankkr7/blogProject.git
+```
+
+### Setup Instructions
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Create your first Vite Project.
+4. Setup Install dependencies using npm install.
+5. Run the application using npm run dev.
+6. Access the application in your browser at http://localhost:5173.
+
+<br />
+
+### Install
+
+Install NPM
+
+Check that you have node and npm installed
+
+To check if you have Node.js installed, run this command in your terminal:
+
+```
+node -v
+```
+
+To confirm that you have npm installed you can run this command in your terminal:
+
+```
+npm -v
+```
+
+To install all the dependences of the project, run the following command:
+
+```
+npm install
+```
+
+To scaffolding your first Vite Project
+
+```
+npm create vite@latest
+```
 
 
+To Set up Appwrite:
+
+Ensure you have an Appwrite instance running.
+Create a new project in Appwrite.
+Note the Project ID and API endpoint.
+Set up the required collections and attributes as per your application's requirements.
+
+Configure environment variables:
+Create a .env file in the root directory and add the following:
+```
+VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
+VITE_APPWRITE_ENDPOINT=your_appwrite_endpoint
+
+```
+
+To run the application, run the following command:
+
+```
+npm run dev
+```
 
 
-// Main again-
+<br />
+
+## 🔗 Contact
+If you want to contact me, you can reach me through below handles.
+
+<a href="https://www.linkedin.com/in/mayankkr7/">
+        <img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="https://www.linkedin.com/in/mayankkr7/" />
+</a>
+
+<a href="https://github.com/mayankkr7/">
+        <img align="center" src="https://img.shields.io/badge/mayank_kumar-20242A?style=for-the-badge&logo=Github&logoColor=white" alt="https://github.com/mayankkr7/" />
+</a>
 
 
-1. Authentication:
-Users can sign up for an account using their email and password.
-Once signed up, users can log in using their credentials.
-Authentication state is managed using Redux and stored in the application's global state.
+## Show your support
 
-2. Main Components:
-Header and Footer components: These provide the layout structure for your application and are displayed on every page.
-AuthLayout component: Handles authentication for certain routes, redirecting users to the login page if they are not authenticated.
-Login and Signup components: Used for user authentication and account creation.
-Home, AddPost, AllPosts, EditPost, and Post components: These represent different pages/views of your blog application.
-PostForm component: Used for creating and editing blog posts.
-PostCard component: Displays a single blog post with its title and featured image.
-RTE (Rich Text Editor) component: Allows users to input rich text content for their blog posts.
-Routing:
-React Router is used for routing between different pages of the application.
-Public routes, such as the home page, login, and signup pages, are accessible to all users.
-Private routes, such as adding/editing blog posts and viewing all posts, are protected and require authentication.
-
-3. State Management:
-Redux is used for managing global application state, particularly for authentication-related data.
-The authSlice defines reducers for handling login and logout actions, which update the authentication state in the Redux store.
-
-4. Backend Integration:
-There are references to appwriteService, indicating integration with a backend service for user authentication and possibly storing blog post data.
-The config.js file contains configuration parameters for connecting to the backend service.
-
-Overall, your application seems to provide basic blogging functionality, allowing users to sign up, log in, create, edit, and view blog posts. It utilizes React for the frontend, Redux for state management, React Router for routing, and integrates with a backend service for authentication and data storage.
+Give a ⭐️ if you like this project!
