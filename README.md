@@ -25,15 +25,15 @@ Blog App Project is a full-featured web application designed for efficient post 
 
 ### Frontend
 
-**React.js:** For building user interfaces.
-**Redux Toolkit:** For state management.
-**React Hook Form:** For form management and validation.
-**TinyMCE:** Self-hosted rich text editor.
-**Tailwind CSS:** For styling.
+- **React.js:** For building user interfaces.
+- **Redux Toolkit:** For state management.
+- **React Hook Form:** For form management and validation.
+- **TinyMCE:** Self-hosted rich text editor.
+- **Tailwind CSS:** For styling.
 
 ### Backend
 
-**Appwrite:** For authentication and backend services.
+- **Appwrite:** For authentication and backend services.
 
 ### Tools and Libraries
 
@@ -58,10 +58,9 @@ This project was built using react: v18.2.0, react-dom: v18.2.0, reduxjs/toolkit
 
 The project repository can be found in [GitHub link](https://github.com/mayankkr7/blogProject.git) or just clone the project using this command.
 
-```
 Using HTTPS
-
-# git clone  https://github.com/mayankkr7/blogProject.git
+```
+git clone  https://github.com/mayankkr7/blogProject.git
 ```
 
 ### Setup Instructions
